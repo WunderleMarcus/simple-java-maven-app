@@ -4,8 +4,8 @@ pipeline {
         stage('Hello Jenkins') {
             steps {
                 sh ''' 
-                mvn package
-                mvn test
+                opt/apache-maven-3.8.6/bin/mvn package
+                opt/apache-maven-3.8.6/bin/mvn test
                 '''
             }
         }
